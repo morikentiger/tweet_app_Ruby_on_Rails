@@ -1,2 +1,25 @@
-<h1>Posts#index</h1>
-<p>Find me in app/views/posts/index.html.erb</p>
+<header>
+  <div class="header-logo">
+    <a href="/">TweetApp</a>
+  </div>
+  <ul class="header-menus">
+    <li>
+      <a href="/about">TweetAppとは</a>
+    </li>
+  </ul>
+</header>
+<!-- ここに変数post1を定義して、指定された投稿内容を代入してください -->
+<% post1 = "今日からProgateでRailsの勉強するよー！" %>
+<!-- ここに変数post2を定義して、指定された投稿内容を代入してください -->
+<% post2 = "投稿一覧ページ作成中！" %>
+
+<div class="main posts-index">
+  <div class="container">
+    <div class="posts-index-item">
+      <%= post1 %>
+    </div>
+    <div class="posts-index-item">
+      <%= post2 %>
+    </div>
+  </div>
+</div>
